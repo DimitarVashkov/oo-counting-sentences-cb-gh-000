@@ -16,9 +16,11 @@ class String
 
   def count_sentences
     sentences = self.split('[.?!]')
-    sentences.count do |x|
+    sentences.count {|x| x.length > 1}
       if (x.length > 1)
+        
+      end
     end
-    
+
   end
 end
