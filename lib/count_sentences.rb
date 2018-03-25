@@ -18,7 +18,6 @@ class String
     sentences = self.split(/[.?!]/)
     puts sentences
     result = sentences.count {|x| x.length > 1}
-    binding.pry
 
   end
 end
